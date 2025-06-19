@@ -37,6 +37,8 @@ address {
   font-style: normal;
 }
 
+img {display: block;}
+
 .container {
   width: 1158px;
   padding-left: 15px;
