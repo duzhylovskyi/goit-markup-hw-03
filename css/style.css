@@ -61,6 +61,15 @@ img {
   margin: 0 auto;
 }
 
+.squad {
+  padding: 32px 0;
+}
+
+.portf {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+}
+
 /* header */
 
 .header {
@@ -235,6 +244,7 @@ img {
 }
 .team-list-item {
   background-color: #ffffff;
+  border-radius: 0px 0px 4px 4px;
 }
 .team-list-photos {
 }
