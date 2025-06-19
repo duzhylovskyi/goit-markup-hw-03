@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   background-color: #ffffff;
@@ -6,20 +10,51 @@ body {
 
 ul {
   list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 a {
   text-decoration: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 button {
   cursor: pointer;
 }
 
+address {
+  font-style: normal;
+}
+
+.container {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
 /* header */
 
 .header {
 }
+
+.header-container {
+  display: flex;
+}
+
 .header-navigation {
+  display: flex;
 }
 .header-logo {
   font-family: "Raleway", sans-serif;
@@ -29,11 +64,14 @@ button {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  margin-right: 76px;
 }
 .header-logo-color {
   color: #2e2f42;
 }
 .header-menu-list {
+  display: flex;
+  gap: 40px;
 }
 .header-menu-item {
 }
@@ -51,9 +89,11 @@ button {
 }
 
 .header-address {
-  font-style: normal;
+  margin-left: auto;
 }
 .header-address-list {
+  display: flex;
+  gap: 40px;
 }
 .header-address-item {
 }
@@ -76,6 +116,8 @@ button {
 
 .hero {
   background: #2e2f42;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 .hero-title {
   font-family: "Roboto", sans-serif;
@@ -85,6 +127,9 @@ button {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
+  max-width: 496px;
+  margin: 0 auto;
+  margin-bottom: 48px;
 }
 .hero-button {
   font-family: "Roboto", sans-serif;
@@ -94,6 +139,10 @@ button {
   letter-spacing: 0.04em;
   color: #fff;
   background: #4d5ae5;
+  display: block;
+  margin: 0 auto;
+  min-width: 169px;
+  height: 56px;f
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -105,10 +154,13 @@ button {
 /* benefits */
 
 .benefits {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .benefits-title {
 }
-.benefits-list {
+.benefits-list {display: flex;
+  gap: 24px;
 }
 .benefits-list-item {
 }
@@ -119,6 +171,7 @@ button {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 .benefits-list-paragraph {
   font-family: "Roboto", sans-serif;
@@ -135,6 +188,8 @@ button {
 
 .team {
   background: #f4f4fd;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .team-title {
   font-family: "Roboto", sans-serif;
@@ -144,8 +199,10 @@ button {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  margin-bottom: 72px;
 }
-.team-list {
+.team-list {display: flex;
+  gap: 24px;
 }
 .team-list-item {
   background-color: #ffffff;
@@ -160,6 +217,7 @@ button {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 .team-list-paragraph {
   font-family: "Roboto", sans-serif;
@@ -171,11 +229,17 @@ button {
   color: #434455;
 }
 
+.team-wrapper {
+  padding: 32px 16px;
+}
+
 /* team end */
 
 /* portfolio */
 
 .portfolio {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .portfolio-title {
   font-family: "Roboto", sans-serif;
@@ -186,8 +250,11 @@ button {
   text-align: center;
   text-transform: capitalize;
   color: #2e2f42;
+  margin-bottom: 72px;
 }
-.portfolio-list {
+.portfolio-list {display: flex;
+  gap: 48px 24px;
+  flex-wrap: wrap;
 }
 .portfolio-list-item {
 }
@@ -200,6 +267,7 @@ button {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 .portfolio-list-paragraph {
   font-family: "Roboto", sans-serif;
@@ -210,12 +278,18 @@ button {
   color: #434455;
 }
 
+.portfolio-wrapper {
+  padding: 32px 226px 32px 16px;
+}
+
 /* portfolio end */
 
 /* footer */
 
 .footer {
   background-color: #2e2f42;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .footer-logo {
   font-family: "Raleway", sans-serif;
@@ -225,6 +299,8 @@ button {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 .footer-logo-color {
   color: #f4f4fd;
@@ -236,6 +312,7 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  max-width: 264px;
 }
 
 /* footer end */
