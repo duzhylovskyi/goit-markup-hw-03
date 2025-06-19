@@ -190,6 +190,7 @@ img {
   gap: 24px;
 }
 .benefits-list-item {
+  width: calc((100% - 72px) / 4);
 }
 .benefits-list-title {
   font-family: "Roboto", sans-serif;
